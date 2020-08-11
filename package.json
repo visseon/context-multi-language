@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Burhan YILMAZ",
   "license": "MIT",
-  "homepage": "https://github.com/burhanyilmaz/context-multi-language#readme",
+  "homepage": "https://github.com/visseon/context-multi-language#readme",
   "peerDependencies": {
     "react": "^16.8.0",
     "react-native": "^0.60.0"
@@ -22,9 +22,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/burhanyilmaz/context-multi-language"
+    "url": "git@github.com:visseon/context-multi-language.git"
   },
   "bugs": {
-    "url": "https://github.com/burhanyilmaz/context-multi-language/issues"
+    "url": "https://github.com/visseon/context-multi-language/issues"
   }
 }
