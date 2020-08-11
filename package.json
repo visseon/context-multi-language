@@ -1,0 +1,30 @@
+{
+  "name": "context-multi-language",
+  "version": "1.0.0",
+  "description": "Multi Language System for React and React Native",
+  "main": "index.js",
+  "author": "Burhan YILMAZ",
+  "license": "MIT",
+  "homepage": "https://github.com/burhanyilmaz/context-multi-language#readme",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-native": "^0.60.0"
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "devDependencies": {
+    "react": "^16.8.6",
+    "react-native": "^0.60.0"
+  },
+  "keywords": [
+    "react-native",
+    "react-native context api",
+    "check-ios-device-type"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burhanyilmaz/context-multi-language"
+  },
+  "bugs": {
+    "url": "https://github.com/burhanyilmaz/context-multi-language/issues"
+  }
+}
