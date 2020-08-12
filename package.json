@@ -22,5 +22,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/visseon/context-multi-language"
+<<<<<<< HEAD
   }
+=======
+  },
+  "scripts": {
+    "b": "babel . -d lib",
+    "build": "rm -rf .cache && rm -rf dist && parcel build *.js  ./components/**/index.js --public-url ./ && npx copyfiles ./components/**/index.native.js  ./dist"
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/visseon" }
+>>>>>>> 03bfe4bf6a27fa80af4e697116e531e8b1b92761
 }
