@@ -1,5 +1,3 @@
-import useTranslations from './useTranslations';
-import TranslationProvider from './TranslationsProvider';
-import TranslationsContext from './TranslationsContext';
-
-export default { useTranslations, TranslationProvider, TranslationsContext };
+export { default as useTranslations } from './useTranslations';
+export { default as TranslationsContext } from './TranslationsContext';
+export { default as TranslationsProvider } from './TranslationsProvider';

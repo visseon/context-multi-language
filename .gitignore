@@ -33,6 +33,8 @@ local.properties
 #
 .vscode/
 
+.cache
+
 # node.js
 #
 node_modules/

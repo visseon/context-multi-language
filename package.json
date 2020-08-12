@@ -1,30 +1,33 @@
 {
   "name": "context-multi-language",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "Multi Language System for React and React Native",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "author": "Burhan YILMAZ",
   "license": "MIT",
   "homepage": "https://github.com/visseon/context-multi-language#readme",
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-native": "^0.60.0"
+    "react": "^16.8.0"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "devDependencies": {
-    "react": "^16.8.6",
-    "react-native": "^0.60.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.82.6"
   },
   "keywords": [
     "react-native",
     "react-native context api",
-    "check-ios-device-type"
+    "multi language app",
+    "react native multi language app",
+    "react multi language app"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:visseon/context-multi-language.git"
+    "url": "https://github.com/visseon/context-multi-language"
   },
-  "bugs": {
-    "url": "https://github.com/visseon/context-multi-language/issues"
+  "scripts": {
+    "b": "babel . -d lib",
+    "build": "rm -rf .cache && rm -rf dist && parcel build *.js  ./components/**/index.js --public-url ./ && npx copyfiles ./components/**/index.native.js  ./dist"
   }
 }
