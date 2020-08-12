@@ -29,5 +29,6 @@
   "scripts": {
     "b": "babel . -d lib",
     "build": "rm -rf .cache && rm -rf dist && parcel build *.js  ./components/**/index.js --public-url ./ && npx copyfiles ./components/**/index.native.js  ./dist"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
