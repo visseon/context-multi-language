@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "declaration": true,
+      "outDir": "./lib",
+      "rootDir": "src",
+      "strict": true,
+      "jsx": "react",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "allowJs": true,
+      "experimentalDecorators": true
+   },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+  }

@@ -116,6 +116,9 @@ const HomeScreen = () => {
 
 <img src="assets/react.gif" width="600"  />
 
+
+<img src="https://5kr2u.sse.codesandbox.io/flag?country=az" width="200"  />
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -123,3 +126,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+
