@@ -1,8 +1,8 @@
-import { useContext, useCallback, useMemo } from "react";
-import TranslationsContext from "./TranslationsContext";
-import { ACTION_TYPES } from "./Constants";
+import { useContext, useCallback, useMemo } from 'react';
+import TranslationsContext from './TranslationsContext';
+import { ACTION_TYPES } from './Constants';
 
- const useTranslations = () => {
+const useTranslations = () => {
   const {
     state: { translations, locale, languages },
     dispatch,
@@ -12,7 +12,7 @@ import { ACTION_TYPES } from "./Constants";
     (language) => {
       dispatch({ type: ACTION_TYPES.CHANGE_LANGUAGE, value: language });
     },
-    [locale]
+    [locale],
   );
 
   const t = useMemo(() => translations?.[locale] || {}, [locale]);

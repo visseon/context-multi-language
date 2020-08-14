@@ -1,6 +1,6 @@
 import React from 'react';
 
- const TranslationsContext = React.createContext({
+const TranslationsContext = React.createContext({
   state: {
     locale: '',
     languages: [],

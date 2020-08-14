@@ -1,9 +1,9 @@
-import React, { memo } from 'react';
+import React from 'react';
 import {
   SafeAreaView, Text, StyleSheet, TouchableOpacity,
 } from 'react-native';
 
-export const TranslationsError = ({ onPress }) => (
+export const TranslationsError = ({ onPress }: { onPress: () => void }) => (
   <SafeAreaView style={styles.container}>
     <TouchableOpacity
       onPress={onPress}
@@ -34,4 +34,3 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 });
-

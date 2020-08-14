@@ -1,29 +1,40 @@
-import React, { useEffect, useReducer, useCallback } from "react";
+import React, { useEffect, useReducer, useCallback } from 'react';
 import {
   onSetError,
   onChangeLoading,
   onChangeLanguage,
   onSetTranslations,
-} from "./TranslationsActions";
-import  TranslationsContext from "./TranslationsContext";
-import { TranslationsReducer } from "./TranslationsReducer";
-import { TranslationsError } from "./components/TranslationsError";
-import { TranslationLoading } from "./components/TranslationLoading";
+} from './TranslationsActions';
+import TranslationsContext from './TranslationsContext';
+import { TranslationsReducer } from './TranslationsReducer';
+import { TranslationsError } from './components/TranslationsError';
+import { TranslationLoading } from './components/TranslationLoading';
 
- const TranslationsProvider = ({
+type PropsBase = {
+  translations?: object;
+  defaultLocale?: string;
+  children: React.ReactNode;
+  remoteTranslationsUrl?: string;
+  errorComponent?: () => React.ReactNode;
+  loadingComponent?: () => React.ReactNode;
+}
+
+export type Props = ({ translations: object } | { remoteTranslationsUrl: string }) & PropsBase;
+
+const TranslationsProvider = ({
   children,
   translations,
   errorComponent,
   loadingComponent,
-  defaultLocale = "tr",
-  remoteTranslationsUrl = "",
-}) => {
+  defaultLocale = 'tr',
+  remoteTranslationsUrl = '',
+}: Props) => {
   const defaultState = {
     error: null,
     languages: [],
     loading: false,
     translations: translations || {},
-    locale: translations && !remoteTranslationsUrl ? "" : defaultLocale,
+    locale: translations && !remoteTranslationsUrl ? '' : defaultLocale,
   };
   const [state, dispatch] = useReducer(TranslationsReducer, defaultState);
 
@@ -60,4 +71,5 @@ import { TranslationLoading } from "./components/TranslationLoading";
     </TranslationsContext.Provider>
   );
 };
+
 export default TranslationsProvider;

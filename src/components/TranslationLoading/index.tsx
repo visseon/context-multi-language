@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 
 export const TranslationLoading = () => (
   <div style={styles.loadingContainer}>
@@ -12,4 +12,3 @@ const styles = {
     justifyContent: 'center',
   },
 };
-

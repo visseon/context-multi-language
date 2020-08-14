@@ -1,6 +1,6 @@
-import React, { memo } from 'react';
+import React, { CSSProperties } from 'react';
 
-export const TranslationsError = ({ onPress }) => (
+export const TranslationsError = ({ onPress }: { onPress: void }) => (
   <div style={styles.container}>
     <div onClick={onPress} style={styles.button}>
       <h1 style={styles.buttonTitle}>Hata Olustu Tekrar Yukle!</h1>
@@ -8,7 +8,11 @@ export const TranslationsError = ({ onPress }) => (
   </div>
 );
 
-const styles = {
+interface ICss {
+  [key: string]: CSSProperties;
+}
+
+const styles: ICss = {
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -24,7 +28,6 @@ const styles = {
   buttonTitle: {
     fontSize: 18,
     color: 'white',
-    fontWeight: '700',
+    fontWeight: 'bold',
   },
 };
-

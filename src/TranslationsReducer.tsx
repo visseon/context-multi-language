@@ -23,4 +23,3 @@ export const TranslationsReducer = (state, action) => {
       return state;
   }
 };
-
