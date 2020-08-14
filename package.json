@@ -1,6 +1,6 @@
 {
   "name": "context-multi-language",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Multi Language System for React and React Native",
   "main": "./lib/index.js",
   "author": "Burhan YILMAZ",
@@ -9,6 +9,12 @@
   "peerDependencies": {
     "react": "^16.8.0"
   },
+  "files": [
+    "src",
+    "lib",
+    "types/*.d.ts"
+  ],
+  "types": "types/index.d.ts",
   "devDependencies": {
     "react": "^16.8.6",
     "@types/node": "^14.0.27",
@@ -29,7 +35,7 @@
     "url": "https://github.com/burhanyilmaz/context-multi-language"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/burhanyilmaz"
+    "access": "public"
   },
   "scripts": {
     "build": ""

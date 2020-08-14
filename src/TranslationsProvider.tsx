@@ -5,12 +5,12 @@ import {
   onChangeLanguage,
   onSetTranslations,
 } from "./TranslationsActions";
-import { TranslationsContext } from "./TranslationsContext";
+import  TranslationsContext from "./TranslationsContext";
 import { TranslationsReducer } from "./TranslationsReducer";
 import { TranslationsError } from "./components/TranslationsError";
 import { TranslationLoading } from "./components/TranslationLoading";
 
-export const TranslationsProvider = ({
+ const TranslationsProvider = ({
   children,
   translations,
   errorComponent,
@@ -60,3 +60,4 @@ export const TranslationsProvider = ({
     </TranslationsContext.Provider>
   );
 };
+export default TranslationsProvider;

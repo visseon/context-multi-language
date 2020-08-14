@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const TranslationsContext = React.createContext({
+ const TranslationsContext = React.createContext({
   state: {
     locale: '',
     languages: [],
@@ -9,3 +9,4 @@ export const TranslationsContext = React.createContext({
   dispatch: () => null,
 });
 
+export default TranslationsContext;

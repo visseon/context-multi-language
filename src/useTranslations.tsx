@@ -1,8 +1,8 @@
 import { useContext, useCallback, useMemo } from "react";
-import { TranslationsContext } from "./TranslationsContext";
+import TranslationsContext from "./TranslationsContext";
 import { ACTION_TYPES } from "./Constants";
 
-export const useTranslations = () => {
+ const useTranslations = () => {
   const {
     state: { translations, locale, languages },
     dispatch,
@@ -23,3 +23,5 @@ export const useTranslations = () => {
     changeLanguage,
   };
 };
+
+export default useTranslations;

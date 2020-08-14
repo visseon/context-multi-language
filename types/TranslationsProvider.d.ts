@@ -1,5 +1,5 @@
 /// <reference types="react" />
-export declare const TranslationsProvider: ({ children, translations, errorComponent, loadingComponent, defaultLocale, remoteTranslationsUrl, }: {
+declare const TranslationsProvider: ({ children, translations, errorComponent, loadingComponent, defaultLocale, remoteTranslationsUrl, }: {
     children: any;
     translations: any;
     errorComponent: any;
@@ -7,3 +7,4 @@ export declare const TranslationsProvider: ({ children, translations, errorCompo
     defaultLocale?: string | undefined;
     remoteTranslationsUrl?: string | undefined;
 }) => JSX.Element;
+export default TranslationsProvider;
