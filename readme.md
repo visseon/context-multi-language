@@ -14,6 +14,9 @@ npm install context-multi-language
 
 ## Usage
 
+Add SKIP_PREFLIGHT_CHECK=true to an .env file in your project if you get eslint error.
+
+
 #### TranslationsProvider
 
 ```js
