@@ -1,6 +1,6 @@
 # context-multi-language
 
-This library is provide Multi Language System for React and React Native.
+This library is for providing Multi Language System for React and React Native Applications.
 
 ## Installation
 
@@ -23,14 +23,14 @@ npm install context-multi-language
 />
 ```
 
-| Prop                  | Type   | Default            | Description                       |
-| --------------------- | ------ | ------------------ | --------------------------------- |
-| translations          | object | undefined          | Translations data                 |
-| remoteTranslationsUrl | string | undefined          | Remote translations data endpoint |
-| defaultLocale         | string | tr                 | default language                  |
-| errorComponent        | FC     | TranslationsError  | Default error component.          |
-| loadingComponent      | FC     | TranslationLoading | Default loading component.        |
-| children              | FC     |                    | TranslationsProvider's children.  |
+| Prop                  | Type   | Default            | Description                                    |
+| --------------------- | ------ | ------------------ | ---------------------------------------------- |
+| translations          | object | undefined          | translations data                              |
+| remoteTranslationsUrl | string | undefined          | fetch translations data from a remote endpoint |
+| defaultLocale         | string | tr                 | default language                               |
+| errorComponent        | FC     | TranslationsError  | default error component.                       |
+| loadingComponent      | FC     | TranslationLoading | default loading component.                     |
+| children              | FC     |                    | TranslationsProvider's children.               |
 
 #### useTranslations
 
@@ -40,10 +40,9 @@ const { t, changeLanguage, languages } = useTranslations();
 
 | Prop           | Type     | Description                  |
 | -------------- | -------- | ---------------------------- |
-| t              | object   | Provide translations data.   |
-| changeLanguage | function | Change exist language.       |
-| languages      | array    | Exist translation languages. |
-
+| t              | object   | provide translations data.   |
+| changeLanguage | function | change current language.       |
+| languages      | array    | existing languages. |
 
 ## Samples
 
@@ -116,7 +115,6 @@ const HomeScreen = () => {
 
 <img src="assets/react.gif" width="600"  />
 
-
 <img src="https://5kr2u.sse.codesandbox.io/flag?country=az" width="200"  />
 
 ## Contributing
@@ -126,6 +124,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
-
